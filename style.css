@@ -97,7 +97,7 @@ span h1,
 @media (max-width: 428px) {
    .container {
       width: 311px;
-      height: 901px;
+      height: 801px;
    }
    .container .content {
       margin: 28px;
@@ -108,17 +108,15 @@ span h1,
    .container .content h4:nth-child(2) {
       font-size: 16px;
       margin-top: 15px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
    }
    .container .content h4:nth-child(3) {
       font-size: 14px;
       line-height: 27px;
+      margin-bottom: 10px;
    }
    .container .flex-wrap {
-      margin-top: 80px;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
    }
    .flex-wrap .price,
    .why {
@@ -139,5 +137,8 @@ span h1,
    }
    .why .why-wrap {
       margin: 15px 15px 30px 15px;
+   }
+   .why .why-wrap p {
+      margin: 20px 0 50px 0;
    }
 }
