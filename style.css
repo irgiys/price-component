@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600&display=swap");
+body {
+   background-color: #e6eff6;
+   /* center item */
+   font-family: "Karla", sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.container {
+   background: #fff;
+   width: 850px;
+   height: 700px;
+   border-radius: 10px;
+   margin-top: 40px;
+   overflow: hidden;
+}
+.container .content {
+   margin: 50px;
+}
+.container .content h1 {
+   color: #519f9c;
+   font-size: 45px;
+}
+.container .content h4:nth-child(2) {
+   color: #bfdf32;
+   margin-top: 32px;
+   margin-bottom: 19px;
+   font-size: 26px;
+}
+.container .content h4:nth-child(3) {
+   color: #949494;
+   font-size: 23px;
+   line-height: 36px;
+   font-weight: 300;
+   margin-bottom: 39px;
+}
+
+/* price & about */
+.container .flex-wrap {
+   display: flex;
+   height: 100vh;
+   color: #eaeaea;
+}
+.flex-wrap .price {
+   background-color: #2bb3b1;
+}
+.price .price-wrap {
+   margin: 50px;
+}
+
+.price .price-wrap span {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin: -10px 0 -27px 0;
+}
+.price .price-wrap h2,
+span h1,
+.why .why-wrap h2 {
+   color: white;
+}
+
+.flex-wrap .price,
+.why {
+   width: 425px;
+}
+.flex-wrap .price .price-wrap button {
+   margin-top: 20px;
+   background: #bfdf32;
+   color: white;
+   font-size: medium;
+   border: none;
+   border-radius: 6px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.246);
+   width: 320px;
+   height: 60px;
+   cursor: pointer;
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+.flex-wrap .why {
+   background-color: #4abebd;
+}
+
+.why .why-wrap {
+   margin: 50px;
+   width: 240px;
+}
+.why .why-wrap p {
+   margin-top: 40px;
+   line-height: 170%;
+}
+
+/* media query */
+@media (max-width: 428px) {
+   .container {
+      width: 311px;
+      height: 901px;
+   }
+   .container .content {
+      margin: 28px;
+   }
+   .container .content h1 {
+      font-size: 27px;
+   }
+   .container .content h4:nth-child(2) {
+      font-size: 16px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+   }
+   .container .content h4:nth-child(3) {
+      font-size: 14px;
+      line-height: 27px;
+   }
+   .container .flex-wrap {
+      margin-top: 80px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .flex-wrap .price,
+   .why {
+      width: 100%;
+   }
+
+   .price .price-wrap {
+      margin: 15px 15px 30px 15px;
+   }
+   .flex-wrap .price-wrap .price-wrap h2 {
+      font-size: 20px;
+   }
+   .price .price-wrap span {
+      margin: -19px 0 -20px 0;
+   }
+   .flex-wrap .price .price-wrap button {
+      width: 280px;
+   }
+   .why .why-wrap {
+      margin: 15px 15px 30px 15px;
+   }
+}
