@@ -50,14 +50,14 @@ body {
    margin: 50px;
 }
 
-.price .price-wrap span {
+.price .price-wrap .dollar {
    display: flex;
    align-items: center;
    gap: 10px;
    margin: -10px 0 -27px 0;
 }
 .price .price-wrap h2,
-span h1,
+.dollar h1,
 .why .why-wrap h2 {
    color: white;
 }
@@ -129,7 +129,7 @@ span h1,
    .flex-wrap .price-wrap .price-wrap h2 {
       font-size: 20px;
    }
-   .price .price-wrap span {
+   .price .price-wrap .dollar {
       margin: -19px 0 -20px 0;
    }
    .flex-wrap .price .price-wrap button {
